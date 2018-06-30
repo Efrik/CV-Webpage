@@ -1,0 +1,72 @@
+html {
+    font-family: sans-serif;
+    color: grey;
+    background-color:lightgreen;
+}
+h1{
+    font-weight: 200%;
+}
+a{
+    text-decoration:none;    
+}
+a.link{
+    color: darkgreen;
+}
+a:hover{
+    color:darkgreen;
+}
+a:visited{
+    color:mediumaquamarine;
+}
+article {
+    font-size: 200%;
+    text-indent: 200px;
+}
+#picture{
+    width:100px;
+    height:100px;
+    border:8px;
+    border-style: solid;
+    border-color: forestgreen;
+    border-radius: 80px;
+}
+nav {
+    position: fixed;
+    top:0px;
+    left:0px;
+    color:white;
+    background: forestgreen;
+    width: 90px;
+    border-bottom-right-radius: 20px;
+}
+nav.ul{
+    text-indent: -15px;
+}
+#icons_list{
+    list-style-type: none;
+    text-indent: -15px;
+}
+footer{
+    position fixed;
+    background:forestgreen;
+    bottom:0px;
+    height: 75px;
+    width:auto; 
+}
+
+img.samplepic{
+    width:200px;
+    height: 200px;
+}
+img.list_icon{
+    width: 45px;
+    height: 45px;
+    transition: transform 0.3s;
+    transition-timing-function: ease-in-out;
+}
+img.list_icon:hover{
+    transform: scale(1.2);
+}
+<!-- I have tried to make a sibling text from the list_icon to gradually appear when the cursor hovers over the icon, but I can not yet do that, not even with sibling accesors (it ignores the "gadually")-->
+
+    

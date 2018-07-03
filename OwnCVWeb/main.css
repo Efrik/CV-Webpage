@@ -1,13 +1,20 @@
+/*General format of sections*/
 html {
     font-family: sans-serif;
-    color: grey;
+    color: darkslategrey;
     background-color:lightgreen;
 }
 h1{
     font-weight: 200%;
 }
+ul{
+    list-style-type: none;
+    max-width:50%;
+    margin:0 auto;
+}
 a{
-    text-decoration:none;    
+    text-decoration:none; 
+    color: forestgreen;
 }
 a.link{
     color: darkgreen;
@@ -20,31 +27,14 @@ a:visited{
 }
 article {
     font-size: 200%;
-    text-indent: 200px;
-}
-#picture{
-    width:100px;
-    height:100px;
-    border:8px;
-    border-style: solid;
-    border-color: forestgreen;
-    border-radius: 80px;
+    text-align:center;
+    width:window;
 }
 nav {
     position: fixed;
     top:0px;
     left:0px;
     color:white;
-    background: forestgreen;
-    width: 90px;
-    border-bottom-right-radius: 20px;
-}
-nav.ul{
-    text-indent: -15px;
-}
-#icons_list{
-    list-style-type: none;
-    text-indent: -15px;
 }
 footer{
     position fixed;
@@ -53,20 +43,113 @@ footer{
     height: 75px;
     width:auto; 
 }
-
-img.samplepic{
-    width:200px;
-    height: 200px;
+p { /*Taken from SamuelCook from Stackoverflow*/
+    max-width:50%;
+    text-align:justify;
+    margin:0 auto;
 }
-img.list_icon{
+table{
+    text-align: center;
+    vertical-align: middle;
+    table-layout:auto;
+    border-collapse: collapse;
+    border-spacing: 10px 10px;
+    margin:0 auto;
+    font-size: 30px;
+    table-layout: auto;
+    border-style:solid;
+    border-color:darkseagreen;
+    border-width: thick;
+    column-rule-width: thick;
+}
+table tbody td {
+    border: solid thick;}
+caption{caption-side: top;}
+
+
+/*Specific sections (classes)*/
+img.samplepic{
+    max-width: 500px;
+    max-height: 500px;
+}
+.list_icon{
     width: 45px;
     height: 45px;
+    opacity: 0.8;
     transition: transform 0.3s;
-    transition-timing-function: ease-in-out;
+    transition-timing-function: ease-in-out;    
 }
-img.list_icon:hover{
+.list_icon:hover{
     transform: scale(1.2);
+    transform: opacity (1);
 }
-<!-- I have tried to make a sibling text from the list_icon to gradually appear when the cursor hovers over the icon, but I can not yet do that, not even with sibling accesors (it ignores the "gadually")-->
+.list_icon:hover ~.message{
+    visibility: visible;
+}
+.list_icon .message{
+    visibility: visible;
+    width: 120px;
+    background-color: beige;
+    color: dimgrey;
+    text-align: center;
+    padding: 5px 0;
+    position: absolute;
+    left:50px;
+    top: 100px;
+}
+/*I have tried to make a sibling text from the list_icon to gradually appear when the cursor hovers over the icon, but I can not yet do that, not even with sibling accesors (it ignores the "gadually")*/
 
+/*Specific sections (id)*/
+#info_table tbody td{
+    border: 2px ;
+}
+#info_table{
+    border:none;
+}
+
+#CV_button{
+    position: fixed;
+    top:10px;
+    right:10px;   
+    text-align: center;
+    vertical-align: middle;
+    height: 50px;
+    text-align: center;
+    border-right-style: solid;
+    border-width: thick;
+    border-color:darkseagreen;
+    border-radius:20px;
+}
+#header {/*Heading article, as Nav is at the side*/
+    background-color: forestgreen;
+    height:150;
+}
+#fill_header-person{
+    height: 120px;
+}
     
+/*Specific entities (id)*/
+#CV_button{
+    float: left;
+    background-color:none;
+    width: 150px;
+    height: 50 px;
+    border-color: darkseagreen;
+    border-width: thick;
+    border-radius: 30 px;
+    border-style: solid;
+}
+#picture{
+    width:200px;
+    height:200px;
+    border:10px;
+    border-style: solid;
+    border-color: forestgreen;
+    border-radius: 120px;
+    position: relative;
+    top: -50;
+}
+#icons_list{
+    text-indent: -15px;
+    list-style-type: none;
+}

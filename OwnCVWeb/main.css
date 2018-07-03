@@ -1,29 +1,39 @@
 /*General format of sections*/
 html {
     font-family: sans-serif;
-    color: darkslategrey;
+    color: black;
     background-color:lightgreen;
+}
+h4{
+    font-weight: 100%;
+    font-size: 200%;
+    font-style:italic;
 }
 h1{
     font-weight: 200%;
+    font-size:200%;
+    color:darkgreen;
 }
 ul{
     list-style-type: none;
     max-width:50%;
     margin:0 auto;
 }
+li{
+    text-align: left;
+}
 a{
     text-decoration:none; 
-    color: forestgreen;
+    color: darkgreen;
 }
 a.link{
     color: darkgreen;
 }
 a:hover{
-    color:darkgreen;
+    color:forestgreen;
 }
 a:visited{
-    color:mediumaquamarine;
+    color:green;
 }
 article {
     font-size: 200%;
@@ -61,9 +71,11 @@ table{
     border-color:darkseagreen;
     border-width: thick;
     column-rule-width: thick;
+    max-width: 50%;
 }
 table tbody td {
-    border: solid thick;}
+    border: solid thick;
+}
 caption{caption-side: top;}
 
 
@@ -105,6 +117,7 @@ img.samplepic{
 }
 #info_table{
     border:none;
+    font-size:24px;
 }
 
 #CV_button{
@@ -112,7 +125,7 @@ img.samplepic{
     top:10px;
     right:10px;   
     text-align: center;
-    vertical-align: middle;
+    text-: middle;
     height: 50px;
     text-align: center;
     border-right-style: solid;
@@ -121,11 +134,32 @@ img.samplepic{
     border-radius:20px;
 }
 #header {/*Heading article, as Nav is at the side*/
-    background-color: forestgreen;
-    height:150;
+    background-image:url(images/forest.jpg);
+    height:300;
+    padding: 0px;
 }
-#fill_header-person{
-    height: 120px;
+#program_start{
+    background-image:url(images/super-mario-bros.png);
+    background-size: cover;
+}
+#program_learn{
+    background-image:url(images/Program.png);
+    background-size: cover;
+}
+#program_course{
+    background-image: url(images/Meteor%20escape.png);
+    background-size: cover;
+}
+#program_exp{
+    background-image: url(images/Statues.jpg);
+    background-size: cover;
+}
+
+/*Specific entities (class)*/
+img.showcase{
+    max-width:400;
+    max-height:250;
+    border-radius:20px;
 }
     
 /*Specific entities (id)*/
@@ -148,6 +182,7 @@ img.samplepic{
     border-radius: 120px;
     position: relative;
     top: -50;
+    box-shadow: 0px 0px 5px 5px rgba(0,80,0,0.5);
 }
 #icons_list{
     text-indent: -15px;

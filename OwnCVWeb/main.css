@@ -2,7 +2,10 @@
 html {
     font-family: sans-serif;
     color: black;
-    background-color:lightgreen;
+    background-image:url(images/forest.jpg);
+    font-size: 150%;
+    text-align:center;
+    width:window;
 }
 h4{
     font-weight: 100%;
@@ -35,10 +38,10 @@ a:hover{
 a:visited{
     color:green;
 }
+header{
+    
+}
 article {
-    font-size: 200%;
-    text-align:center;
-    width:window;
 }
 nav {
     position: fixed;
@@ -50,7 +53,7 @@ footer{
     position fixed;
     background:forestgreen;
     bottom:0px;
-    height: 75px;
+    height: 105px;
     width:auto; 
 }
 p { /*Taken from SamuelCook from Stackoverflow*/
@@ -65,7 +68,7 @@ table{
     border-collapse: collapse;
     border-spacing: 10px 10px;
     margin:0 auto;
-    font-size: 30px;
+    font-size:100%;
     table-layout: auto;
     border-style:solid;
     border-color:darkseagreen;
@@ -75,6 +78,7 @@ table{
 }
 table tbody td {
     border: solid thick;
+    border-color: darkgreen;
 }
 caption{caption-side: top;}
 
@@ -110,6 +114,12 @@ img.samplepic{
     top: 100px;
 }
 /*I have tried to make a sibling text from the list_icon to gradually appear when the cursor hovers over the icon, but I can not yet do that, not even with sibling accesors (it ignores the "gadually")*/
+.clean_table{
+    border:none;
+}
+.clean_table tbody td{
+    border:none;
+}
 
 /*Specific sections (id)*/
 #info_table tbody td{
@@ -153,6 +163,14 @@ img.samplepic{
 #program_exp{
     background-image: url(images/Statues.jpg);
     background-size: cover;
+}
+#biologist{
+    background-image: url(images/Dinosaur.jpg);
+    background-size:cover;
+}
+#teacher{
+    background-image:url(images/teaching.jpg);
+    background-size:cover;
 }
 
 /*Specific entities (class)*/

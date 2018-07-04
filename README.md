@@ -56,4 +56,6 @@ I want more geek stuff.
 Ok. Then we may split the interests and passions into two sections, leaving hobbies as the last section. What about that?
 I guess that may work.
 Let´s start then.
-<html>
+
+
+This si now mroe than I expected. That is not a CV, there is way too much info. WE can consider it as a personal apge, though. If so, there should be some kind of blog or diary in it. That´s something I must do then.

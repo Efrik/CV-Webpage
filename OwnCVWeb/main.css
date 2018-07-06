@@ -6,6 +6,7 @@ html {
     font-size: 150%;
     text-align:center;
     width:window;
+    overflow:visible;
 }
 h4{
     font-weight: 100%;
@@ -41,20 +42,20 @@ a:visited{
 header{
     
 }
-article {
-}
 nav {
     position: fixed;
-    top:0px;
-    left:0px;
+    top:10px;
+    left:10px;
     color:white;
+    z-index: 2;
 }
 footer{
-    position fixed;
     background:forestgreen;
-    bottom:0px;
-    height: 105px;
-    width:auto; 
+    bottom: 0;
+    height: 200;
+    width:1920; 
+    position: absolute;
+    z-index: 2;
 }
 p { /*Taken from SamuelCook from Stackoverflow*/
     max-width:50%;
@@ -84,7 +85,7 @@ caption{caption-side: top;}
 
 
 /*Specific sections (classes)*/
-img.samplepic{
+.samplepic{
     max-width: 500px;
     max-height: 500px;
 }
@@ -99,26 +100,20 @@ img.samplepic{
     transform: scale(1.2);
     transform: opacity (1);
 }
-.list_icon:hover ~.message{
-    visibility: visible;
-}
-.list_icon .message{
-    visibility: visible;
-    width: 120px;
-    background-color: beige;
-    color: dimgrey;
-    text-align: center;
-    padding: 5px 0;
-    position: absolute;
-    left:50px;
-    top: 100px;
-}
 /*I have tried to make a sibling text from the list_icon to gradually appear when the cursor hovers over the icon, but I can not yet do that, not even with sibling accesors (it ignores the "gadually")*/
 .clean_table{
     border:none;
 }
 .clean_table tbody td{
     border:none;
+}
+.pagesection{
+    position:absolute;
+    height: 2000;
+    width=1000;
+    padding:none;
+    margin:none;
+    opacity=0;
 }
 
 /*Specific sections (id)*/
@@ -129,39 +124,24 @@ img.samplepic{
     border:none;
     font-size:24px;
 }
-
-#CV_button{
-    position: fixed;
-    top:10px;
-    right:10px;   
-    text-align: center;
-    text-: middle;
-    height: 50px;
-    text-align: center;
-    border-right-style: solid;
-    border-width: thick;
-    border-color:darkseagreen;
-    border-radius:20px;
-}
-#header {/*Heading article, as Nav is at the side*/
-    background-image:url(images/forest.jpg);
-    height:300;
+#sidescroll{
+    position:absolute;
     padding: 0px;
+    margin:none;
 }
-#program_start{
-    background-image:url(images/super-mario-bros.png);
+#filling{
+    height=2000;
+}
+#home {
+    background-image:url(images/forest.jpg);
+    background-size:cover;
+ }
+#program1{
+    background-image:url(images/Meteor%20escape.png);
     background-size: cover;
 }
-#program_learn{
+#program2{
     background-image:url(images/Program.png);
-    background-size: cover;
-}
-#program_course{
-    background-image: url(images/Meteor%20escape.png);
-    background-size: cover;
-}
-#program_exp{
-    background-image: url(images/Statues.jpg);
     background-size: cover;
 }
 #biologist{
@@ -171,6 +151,10 @@ img.samplepic{
 #teacher{
     background-image:url(images/teaching.jpg);
     background-size:cover;
+}
+#hobby {
+       background-image:url(images/portal.jpg);
+    background-size:cover; 
 }
 
 /*Specific entities (class)*/
@@ -182,6 +166,10 @@ img.showcase{
     
 /*Specific entities (id)*/
 #CV_button{
+    position: fixed;
+    top:10px;
+    right:10px;   
+    text-align: center;
     float: left;
     background-color:none;
     width: 150px;

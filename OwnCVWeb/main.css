@@ -2,7 +2,7 @@
 html {
     font-family: sans-serif;
     color: black;
-    background-image:url(images/forest.jpg);
+    background-color:forestgreen;
     font-size: 150%;
     text-align:center;
     width:window;
@@ -44,16 +44,16 @@ header{
 }
 nav {
     position: fixed;
-    top:10px;
+    top:20px;
     left:10px;
     color:white;
     z-index: 2;
 }
 footer{
     background:forestgreen;
-    bottom: 0;
-    height: 200;
-    width:1920; 
+    bottom: -1250px;
+    height: 200px;
+    width:1920px; 
     position: absolute;
     z-index: 2;
 }
@@ -111,9 +111,6 @@ caption{caption-side: top;}
     position:absolute;
     height: 2000;
     width=1000;
-    padding:none;
-    margin:none;
-    opacity=0;
 }
 
 /*Specific sections (id)*/
@@ -130,7 +127,7 @@ caption{caption-side: top;}
     margin:none;
 }
 #filling{
-    height=2000;
+    height=5000;
 }
 #home {
     background-image:url(images/forest.jpg);
@@ -178,6 +175,12 @@ img.showcase{
     border-width: thick;
     border-radius: 30 px;
     border-style: solid;
+}
+#listrect{
+    background-color:darkseagreen;
+    height:10px;
+    width:50px;
+    position:relative;    
 }
 #picture{
     width:200px;

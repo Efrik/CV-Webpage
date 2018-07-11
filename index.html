@@ -1,1 +1,207 @@
-Hello World
+/*General format of sections*/
+html {
+    font-family: sans-serif;
+    color: black;
+    background-color:forestgreen;
+    font-size: 150%;
+    text-align:center;
+    width:window;
+    overflow:visible;
+    margin:none;
+    padding:none;
+}
+body{
+    margin:0px;
+    padding:0px;
+    padding-top: 10px;
+}
+h4{
+    font-weight: 100%;
+    font-size: 200%;
+    font-style:italic;
+}
+h1{
+    font-weight: 200%;
+    font-size:200%;
+    color:darkgreen;
+}
+ul{
+    list-style-type: none;
+    max-width:50%;
+    margin:0 auto;
+}
+li{
+    text-align: left;
+}
+a{
+    text-decoration:none; 
+    color: darkgreen;
+}
+a.link{
+    color: darkgreen;
+}
+a:hover{
+    color:forestgreen;
+}
+a:visited{
+    color:green;
+}
+nav {
+    position: fixed;
+    top:20px;
+    left:10px;
+    color:white;
+    z-index: 2;
+}
+footer{
+    background:forestgreen;
+    bottom: -950px;
+    height: 200px;
+    width:1920px; 
+    position: absolute;
+    z-index: 2;
+}
+p { /*Taken from SamuelCook from Stackoverflow*/
+    max-width:50%;
+    text-align:justify;
+    margin:0 auto;
+}
+table{
+    text-align: center;
+    vertical-align: middle;
+    table-layout:auto;
+    border-collapse: collapse;
+    border-spacing: 10px 10px;
+    margin:0 auto;
+    font-size:100%;
+    table-layout: auto;
+    border-style:solid;
+    border-color:darkseagreen;
+    border-width: thick;
+    column-rule-width: thick;
+    max-width: 50%;
+}
+table tbody td {
+    border: solid thick;
+    border-color: darkgreen;
+}
+caption{caption-side: top;}
+
+
+/*Specific sections (classes)*/
+.samplepic{
+    max-width: 500px;
+    max-height: 500px;
+}
+.list_icon{
+    width: 45px;
+    height: 45px;
+    opacity: 0.8;
+    transition: transform 0.3s;
+    transition-timing-function: ease-in-out;    
+}
+.list_icon:hover{
+    transform: scale(1.2);
+    transform: opacity (1);
+}
+/*I have tried to make a sibling text from the list_icon to gradually appear when the cursor hovers over the icon, but I can not yet do that, not even with sibling accesors (it ignores the "gadually")*/
+.clean_table{
+    border:none;
+}
+.clean_table tbody td{
+    border:none;
+}
+.pagesection{
+    position:absolute;
+    height: 1700;
+    width:1000;
+    display:none;
+}
+
+/*Specific sections (id)*/
+#info_table tbody td{
+    border: 2px ;
+}
+#info_table{
+    border:none;
+    font-size:24px;
+}
+#sidescroll{
+    position:absolute;
+    padding: 0px;
+    margin:none;
+}
+#filling{
+    height=5000;
+}
+#home {
+    background-image:url(images/forest.jpg);
+    background-size:cover;
+ }
+#program1{
+    background-image:url(images/Meteor%20escape.png);
+    background-size: cover;
+}
+#program2{
+    background-image:url(images/Program.png);
+    background-size: cover;
+}
+#biologist{
+    background-image: url(images/Dinosaur.jpg);
+    background-size:cover;
+}
+#teacher{
+    background-image:url(images/teaching.jpg);
+    background-size:cover;
+}
+#hobby {
+       background-image:url(images/portal.jpg);
+    background-size:cover; 
+}
+
+/*Specific entities (class)*/
+img.showcase{
+    max-width:500;
+    max-height:300 ;
+    border-radius:20px;
+}
+    
+/*Specific entities (id)*/
+#CV_button{
+    position: fixed;
+    top:20px;
+    right:10px;   
+    text-align: center;
+    float: left;
+    background-color:none;
+    width: 150px;
+    height: 50 px;
+    border-color: darkseagreen;
+    border-width: thick;
+    border-radius: 30 px;
+    border-style: solid;
+    padding: 10px;
+    border-radius: 15px;
+    z-index: 2;
+}
+#listrect{
+    background-color:darkseagreen;
+    height:10px;
+    width:50px;
+    position:relative;    
+}
+#picture{
+    width:200px;
+    height:200px;
+    border:10px;
+    border-style: solid;
+    border-color: forestgreen;
+    border-radius: 120px;
+    position: relative;
+    top: -50;
+    box-shadow: 0px 0px 5px 5px rgba(0,80,0,0.5);
+}
+#icons_list{
+    text-indent: -15px;
+    list-style-type: none;
+}
